@@ -42,7 +42,6 @@ h1 {
         flex-wrap: nowrap;
         align-items: flex-end;
     }
-
     nav li {
         display: inline;
         margin: 0 20px;
@@ -57,6 +56,11 @@ h1 {
     .nav-link:hover {
         color: rgba(50,50,50,0.5);
     }
-    form {
+    #email, #submit {
+        grid-column: 2/4;
+    }
+    #main {
+        max-width: 960px;
+        margin: 0 auto;
     }
 }
