@@ -4,83 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FCC Product Page</title>
 </head>
 <body>
-    <header id="header">
-        <img src="https://via.placeholder.com/150x64" id="header-img" alt="Image of corporate logo">
-        <nav id="nav-bar">
-            <ul>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#function" class="nav-link">How It Works</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="content" role="main">
-        <h1>Absolutely Pawesome Amazing Products</h1>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
+<header 
+    id="header">
+    <img 
+        src="https://via.placeholder.com/200x60"
+        id="header-img"
+        alt="corporate logo for Pawesome Products">
+    <nav 
+        id="nav-bar">
+        <ul>
+            <li><a 
+                    href="#features"
+                    class="nav-link">
+                    Features
+                </a>
+            <li><a 
+                    href="#technical"
+                    class="nav-link">
+                    How it works
+                </a>
+            </li>
+            <li>
+                <a href="#pricing"
+                   class="nav-link">
+                    Pricing
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main 
+    id="main" 
+    role="main">
+    <form 
+        id="form"
+        action="https://www.freecodecamp.com/email-submit">
             <input 
-                id="email"
                 type="email"
+                id="email"
+                placeholder="Enter email"
                 name="email"
-                required
-                placeholder="Please enter your email adress">
-                <input 
-                    id="submit" 
-                    type="submit" 
-                    value="Get Started" >
-        </form>
-    <section id="features">
-
+                required>
+            <input 
+                type="submit"
+                value="Submit"
+                id="submit">
+            </input>
+    </form>
+    <section 
+        id="features">
     </section>
-    <section id="function">
-        <video id="video">
-            <source=https://youtu.be/G1B4E6WxJeg
-        </video>
+    <section 
+        id="technical">
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/iDVItAX-meU" frameborder="0" allowfullscreen></iframe>
     </section>
-    <section id="pricing">
-        <h2>Our products come in multiple attractive pricing options</h2>
-        <article id="Basic">
-            <h3>Our basic package</h3>
-            <ul>
-                <li>Single cat</li>
-                <li>1 month of food included as a bonus</li>
-                <li>Small cat tree included</li>
-            </ul>
-            <p>Price: $25</p>
-            <button>
-                    Select
-                </button>
-        </article>
-        <article id="premium">
-            <h3>Our premium package</h3>
-            <ul>
-            <li>Two cats, more than twice the fun</li>
-            <li>Food supply for both cats for 1 month included</li>
-            <li>Larger cat tree included</li>
-            </ul>
-            <p>Price: $50</p>
-            <button>
-                Select
-            </button>
-        </article>
-        <article id="deluxe">
-            <h3>Deluxe package</h3>
-            <ul>
-                <li>Two cats,same as with our premium package</li>
-                <li>6 months of food included</li>
-                <li>Gigantic cat tree included</li>
-                <li>For a limited time only: Poop scoping concierge service included</li>
-            </ul>
-            <p>$250</p>
-            <button>
-                    Select
-                </button>
-        </article>
+    <section
+        id="pricing">
     </section>
-    </main>
+</main>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link rel="stylesheet" href="style.css">
 </html>
