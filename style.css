@@ -5,6 +5,9 @@
     background-color: #443266;
 }
 #header {
+    width: 100%;
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,18 +66,29 @@ section {
 }
 
 .offer {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
     border: 1px solid black;
     margin: 20px 20px;
     text-align: center;
 }
-
+.offer ul {
+    width: 100%;
+}
 .offer li {
-    list-style: none;
+    grid-column: 1/2;
+}
 
+.offer p {
+    grid-column: 1/2;
 }
 
 .select {
     border: 1px solid ;
+    justify-self: center;
+    width: 45px; 
+    height: 45px;
 }
 .nav-link {
     color: rgb(0,0,0);
@@ -99,6 +113,8 @@ section {
     text-align: center;
     grid-template-rows: auto; 
 }
+
+
 .offer h3 {
     border: 1px solid black;
     padding: 20px;
@@ -117,12 +133,14 @@ section {
 }
 
 #technical {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #video {
-    margin: 0 auto;
+    max-width: 100%;
 }
 @media screen and (min-width: 650px){
     #header {
